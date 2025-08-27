@@ -3,7 +3,7 @@
 
 ## Склонируйте репозиторий к себе на компьютер
 ```bash
-https://github.com/graal101/Flask_Template.git
+git clone https://github.com/graal101/Flask_Template.git
 ```
 ---
 Шаблон включает в себя админ панель, журнал посещения 
