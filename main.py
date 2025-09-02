@@ -36,7 +36,7 @@ def index():
                             content='<h1>Template index page</h1>',
                           )
 
-@app.route('/login')
+@app.route('/logins')
 def login():
     menus = {'Главная': url_for('index'), 'link 2':'#', 'link 3':'#'}
     return render_template('login.html', title='Логин', menus=menus)

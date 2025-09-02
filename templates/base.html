@@ -20,7 +20,7 @@
       <img style='width: 24px' src="{{ url_for('static', filename='img/favicon.png') }}" alt="Logo">
          <ul class="mainmenu">
             {% for text, lnk in menus.items() %}
-               <li> <a href='{{ lnk }}' > {{ text }} </a> </li>
+               <li> <a class="menu-link" href='{{ lnk }}' > {{ text }} </a> </li>
             {% endfor %}
          </ul>
    </nav>
