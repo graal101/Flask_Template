@@ -28,13 +28,16 @@
             <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" style="width: 50px; height: 50px; vertical-align: middle;">
             <h1 class="ms-3">Добро пожаловать на мою страницу</h1>
         </div>
-        <a href="#" class="btn btn-header">Войти</a>
+        <a href="{{url_for('login')}}" class="btn btn-header">Войти</a>
     </header>
 
     <!-- Основной контент -->
     <main class="container mt-4">
+        <!-- Это потом стереть -->
         <h2>Основной контент</h2>
         <p>Здесь вы можете разместить основной контент вашей страницы.</p>
+        {% block content %}
+        {% endblock %}
     </main>
 
     <!-- Футер -->

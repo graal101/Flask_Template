@@ -16,3 +16,45 @@
     background: #fdc073;
     border: 1px solid #fdc073;
  }
+
+/*настройки формы логина*/
+.login-container {
+    max-width: 400px; /* Ширина контейнера */
+    margin: auto; /* Центрирование */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; /* Пробел между полями */
+}
+
+label {
+    margin-bottom: 5px; /* Пробел между меткой и полем ввода */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none; /* Убираем обводку вокруг элемента при фокусе */
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom-color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание элементов формы */
+    align-items: center; /* Центрирование элементов по горизонтали */
+}
+
+.submit-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
