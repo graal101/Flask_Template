@@ -6,3 +6,13 @@
     color: #fdc073;
     background: #3F4137;
 }
+ .btn-header{
+    color: #fdc073;
+    background: #3F4137;
+    border: 1px solid #fdc073;
+ }
+ .btn-header:hover{
+    color: black;
+    background: #fdc073;
+    border: 1px solid #fdc073;
+ }

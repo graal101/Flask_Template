@@ -23,9 +23,12 @@
 <body>
 
     <!-- Хедер -->
-    <header class="d-flex text-left py-3 custom-header">
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" style="width: 50px; height: 50px; vertical-align: middle;">
-        <h1>Добро пожаловать на мою страницу</h1>
+    <header class="d-flex justify-content-between align-items-center py-3 custom-header">
+        <div class="d-flex align-items-center">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Логотип" style="width: 50px; height: 50px; vertical-align: middle;">
+            <h1 class="ms-3">Добро пожаловать на мою страницу</h1>
+        </div>
+        <a href="#" class="btn btn-header">Войти</a>
     </header>
 
     <!-- Основной контент -->
