@@ -1,0 +1,13 @@
+<!-- 404 page html -->
+
+{% extends "base.html"%}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+  <div class="container">
+        <img style="width: 100%; height: auto; object-fit: contain;"
+         src="{{ url_for('static', filename='img/404.jpeg') }}"
+         alt="404 Not Found">
+    </div>
+{% endblock %}
+
+
