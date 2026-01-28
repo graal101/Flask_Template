@@ -10,19 +10,14 @@
    <div class='login-container'>
       
     <form method="post">
+        {{ form.hidden_tag() }}
         <div class="input-group">
-            <label for="username">Никнейм:</label>
-            <input type="text" placeholder="Введите логин" id="username" name="username" required>
+            {{ form.username.label }} {{ form.username(class='input-field', placeholder='Введите логин') }}
         </div>
-        
         <div class="input-group">
-            <label for="password">Пароль:</label>
-            <input type="password" placeholder="Введите пароль" id="password" name="password" required>
+            {{ form.password.label }} {{ form.password(class='input-field', placeholder='Введите пароль') }}
         </div>
-        
-        
-        </div>
-        <input type="submit" value="Войти" class="submit-button">
+        {{ form.submit(class='submit-button') }}    
         <p>Нет аккаунта - <a href="#">Зарегистрироваться</a></p>
         <p>Вернуться на -<a href="{{url_for('home')}}"> главную </a>страницу</p>
     </form>
